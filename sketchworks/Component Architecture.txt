@@ -1,0 +1,7 @@
+COMMON:
+app.component
+	- domains.component "domains"
+	- presence.component "presence"
+	- articleselector.component "articleselector"
+	- articletitle.component "articletitle"
+	- articlecontent.component "articlecontent"

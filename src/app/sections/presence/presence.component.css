@@ -1,0 +1,13 @@
+.contact-block {
+    text-align: left;
+}
+
+.contact-text {
+    font-size: 1vw;
+}
+
+.social-btn {
+    padding-left: 0.2em;
+    font-size: 2.8vw;
+    color: #5ae03a; /* yellowgreen */
+  }

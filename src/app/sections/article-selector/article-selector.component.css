@@ -1,0 +1,30 @@
+.article-selection-row {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    margin-left: 30.5vw;
+    margin-right: 30.5vw;
+}
+
+.article-selection-btn {
+    width: 17vw;
+    height: 11vw;
+
+    margin-top: 2.25vw;
+}
+
+.bawo-selection-btn {
+    background-color: blue;
+}
+
+.golden-hands-selection-btn {
+    background-color: gold;
+}
+
+.partners-selection-btn {
+    background-color: green;
+}
+
+.investors-selection-btn {
+    background-color: purple;
+}
