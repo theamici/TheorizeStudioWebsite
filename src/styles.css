@@ -1,17 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
-
 @font-face {
   font-family: inkfree;
   src: url("assets/Inkfree.ttf");
 }
 
 body {
-  margin-left: 0px;
-  margin-top: 0px;
+  margin-left: 1em;
+  margin-top: 1em;
 
   width: 100%;
   background: #264BB2; /* #5DB275; */
   color: azure;
   font-family: inkfree;
   text-align: center;
+
+  overflow-x: hidden;
 }
