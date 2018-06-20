@@ -1,12 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
 import { RouterModule, Routes } from '@angular/router';
+
+import { AppComponent } from './app.component';
 
 import { DomainsComponent } from './sections/domains/domains.component';
 import { PresenceComponent } from './sections/presence/presence.component';
 import { ArticleSelectorComponent } from './sections/article-selector/article-selector.component';
+import { ArticleHeadlineComponent } from './sections/article-headline/article-headline.component';
 
 import { BawoArticleComponent } from './articles/bawo-article/bawo-article.component';
 import { GoldenHandsArticleComponent } from './articles/golden-hands-article/golden-hands-article.component';
@@ -15,9 +17,9 @@ import { PartnersArticleComponent } from './articles/partners-article/partners-a
 
 const appRoutes: Routes = [
   {
-    path: "",
+    path: "article",
     redirectTo: "/article/partners",
-    pathMatch: 'full'
+    pathMatch: "full"
   },
   { 
     path: "article",
@@ -25,24 +27,28 @@ const appRoutes: Routes = [
       {
         path: "bawo",
         component: BawoArticleComponent,
-        data: { title: "BaWo"}
+        data: { title: 'BaWo' }
       },
       {
         path: "goldenhands",
         component: GoldenHandsArticleComponent,
-        data: { title: "Golden Hands"}
+        data: { title: 'Golden Hands' }
       },
       {
         path: "investors",
         component: InvestorsArticleComponent,
-        data: { title: "Investors"}
+        data: { title: 'Investors' }
       },
       {
         path: "partners",
         component: PartnersArticleComponent,
-        data: { title: "Partners"}
-      },
+        data: { title: 'Partners' }
+      }
     ]
+  },
+  {
+    path: "**",
+    redirectTo: "/article/partners"
   }
 ];
 
@@ -54,11 +60,12 @@ const appRoutes: Routes = [
     DomainsComponent,
     PresenceComponent,
     ArticleSelectorComponent,
+    ArticleHeadlineComponent,
     
     BawoArticleComponent,
     GoldenHandsArticleComponent,
     InvestorsArticleComponent,
-    PartnersArticleComponent,
+    PartnersArticleComponent
   ],
   imports: [
     RouterModule.forRoot(
@@ -70,5 +77,4 @@ const appRoutes: Routes = [
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {
-}
+export class AppModule {}

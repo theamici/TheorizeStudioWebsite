@@ -1,8 +1,11 @@
 @import "../../../assets/css/hover-anim.css";
 
 .temp-btn-title {
-    margin-top: 21%;
-    font-size: 2.8vw;
+    height: inherit;
+    width: inherit;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 2.8vw; 
 }
 
 .article-selection-row {
@@ -32,20 +35,12 @@
     opacity: 0.95;
 }
 
-.article-selection-btn:hover {
-    animation-name: bring-forth;
-    animation-duration: 0.7s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
 .bawo-selection-btn {
     background-image: url("../../../assets/BaWo_Logo.jpg");
 }
 
 .golden-hands-selection-btn {
-    background-color: gold;
+    background-image: url("../../../assets/GoldenHandsMale.jpg");
 }
 
 .partners-selection-btn {
@@ -54,27 +49,4 @@
 
 .investors-selection-btn {
     background-color: purple;
-}
-
-.article-headline {
-    text-align: left;
-    padding-left: 2em;
-
-    font-size: 250%;
-}
-
-.article-divisor {
-    width: 104%;
-    height: 4px;
-
-    box-shadow: 0px 0px 8px azure;
-
-    background-color: azure;
-
-    margin-left: -3.2%;
-}
-
-.arrows {
-    display: inline-block;
-    width: 2em;
 }

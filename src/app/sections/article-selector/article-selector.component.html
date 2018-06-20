@@ -1,26 +1,15 @@
 <div class="article-selection-row">
-  <div (click)="navToArticle(1)" class="article-selection-btn bawo-selection-btn"></div>
+  <div (click)="navToArticle(1)" onclick="scrollToArticle()" class="article-selection-btn bawo-selection-btn bring-forth"></div>
 
-  <div (click)="navToArticle(2)" class="article-selection-btn golden-hands-selection-btn">
-    <h1 class="temp-btn-title">Golden Hands</h1>
-  </div>
+  <div (click)="navToArticle(2)" onclick="scrollToArticle()" class="article-selection-btn golden-hands-selection-btn bring-forth"></div>
 </div>
 
 <div class="article-selection-row">
-  <div (click)="navToArticle(3)" class="article-selection-btn partners-selection-btn">
+  <div (click)="navToArticle(3)" onclick="scrollToArticle()" class="article-selection-btn partners-selection-btn bring-forth">
     <h1 class="temp-btn-title">Partners</h1>
   </div>
 
-  <div (click)="navToArticle(4)" class="article-selection-btn investors-selection-btn">
+  <div (click)="navToArticle(4)" onclick="scrollToArticle()" class="article-selection-btn investors-selection-btn bring-forth">
     <h1 class="temp-btn-title">Investors</h1>
   </div>
 </div>
-
-<div>
-  <h1 class="article-headline">
-    <div class="arrows" [style.opacity]="opacity">{{ arrowFader }}</div> {{ articleTitle }}
-  </h1>
-  <div class="article-divisor"></div>
-</div>
-
-<router-outlet></router-outlet>

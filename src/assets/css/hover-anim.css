@@ -19,3 +19,23 @@
         transform: scale(1.15);
     }
 }
+
+.bring-forth:hover {
+    animation-name: bring-forth;
+    animation-duration: 0.7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    cursor: pointer;
+}
+
+.bring-forth-social:hover {
+    animation-name: bring-forth-social;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    cursor: pointer;
+}

@@ -26,6 +26,7 @@ bottom {
     font-size: 4.6vw;
     white-space: nowrap;
     margin-top: 0.1em;
+    margin-left: -0.3em;
 }
 
 @media screen and (max-width: 992px) {

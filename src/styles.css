@@ -1,6 +1,6 @@
 @font-face {
-  font-family: inkfree;
-  src: url("assets/Inkfree.ttf");
+  font-family: custom;
+  src: url("assets/courier-prime-code-regular.ttf");
 }
 
 body {
@@ -9,9 +9,15 @@ body {
 
   width: 100%;
   background: #264BB2; /* #5DB275; */
+  background-image: url("assets/amicisky.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
   color: azure;
-  font-family: inkfree;
   text-align: center;
+  font-family: custom;
+  letter-spacing: 200%;
 
   overflow-x: hidden;
 }

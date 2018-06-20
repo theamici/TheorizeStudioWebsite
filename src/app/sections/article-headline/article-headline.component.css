@@ -1,0 +1,22 @@
+.article-headline {
+    text-align: left;
+    padding-left: 2em;
+
+    font-size: 275%;
+}
+
+.article-divisor {
+    width: 104%;
+    height: 4px;
+
+    box-shadow: 0px 0px 8px azure;
+
+    background-color: azure;
+
+    margin-left: -3.2%;
+}
+
+.arrows {
+    display: inline-block;
+    width: 2em;
+}
