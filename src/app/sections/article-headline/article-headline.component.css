@@ -1,8 +1,8 @@
 .article-headline {
     text-align: left;
-    padding-left: 2em;
+    margin-left: 6vw;
 
-    font-size: 275%;
+    font-size: 3vw;
 }
 
 .article-divisor {
@@ -13,10 +13,24 @@
 
     background-color: azure;
 
-    margin-left: -3.2%;
+    margin-top: -2vw;
+    margin-left: -10px;
 }
 
 .arrows {
     display: inline-block;
     width: 2em;
+}
+
+@media screen and (max-width: 800px) {
+    .article-headline {
+        margin-top: 1.75em;
+        margin-left: 4vw;
+    
+        font-size: 7.2vw;
+    }
+
+    .article-divisor {
+        margin-top: -3.3vw;
+    }
 }

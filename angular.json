@@ -26,7 +26,7 @@
               "src/styles.css"
             ],
             "scripts": [
-              "src/assets/scrollToArticle.js"
+              "src/assets/scrollToSmoothly.js"
             ]
           },
           "configurations": {
@@ -77,7 +77,7 @@
               "src/styles.css"
             ],
             "scripts": [
-              "src/assets/scrollToArticle.js"
+              "src/assets/scrollToSmoothly.js"
             ],
             "assets": [
               "src/favicon.ico",

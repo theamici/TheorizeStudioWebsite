@@ -4,11 +4,10 @@
 }
 
 body {
-  margin-left: 1em;
+  margin-left: 0.5em;
   margin-top: 1em;
 
   width: 100%;
-  background: #264BB2; /* #5DB275; */
   background-image: url("assets/amicisky.png");
   background-repeat: no-repeat;
   background-size: cover;

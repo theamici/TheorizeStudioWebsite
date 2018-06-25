@@ -1,4 +1,5 @@
 @import "../../../assets/css/hover-anim.css";
+@import "../../../assets/css/swoosh.css";
 
 .contact-block {
     text-align: left;
@@ -15,5 +16,22 @@
 .social-btn {
     padding-right: 0.2em;
     font-size: 2.8vw;
-    color: #5ae03a; /* yellowgreen */
+    color: azure; /* #7CFC00; */
+}
+
+@media screen and (max-width: 800px) {
+    .contact-block {
+        text-align: center;
+        font-weight: normal;
+        margin-left: auto;
+    }
+
+    .contact-text {
+        font-size: 1.6vw;
+    }
+
+    .social-btn {
+        padding-right: 0.2em;
+        font-size: 3.4vw;
+    }
 }

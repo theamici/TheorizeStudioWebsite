@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 
 import { DomainsComponent } from './sections/domains/domains.component';
 import { PresenceComponent } from './sections/presence/presence.component';
-import { ArticleSelectorComponent } from './sections/article-selector/article-selector.component';
 import { ArticleHeadlineComponent } from './sections/article-headline/article-headline.component';
 
 import { BawoArticleComponent } from './articles/bawo-article/bawo-article.component';
@@ -59,7 +58,6 @@ const appRoutes: Routes = [
     
     DomainsComponent,
     PresenceComponent,
-    ArticleSelectorComponent,
     ArticleHeadlineComponent,
     
     BawoArticleComponent,
