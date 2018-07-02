@@ -9,7 +9,7 @@ var scrollData =
 
     // You can change value on these 2 properties
     updateRate: 20,
-    duration: 2250 // default duration
+    duration: 1500 // default duration
 };
 
 function scrollToSmoothly (targetID, customDuration){
@@ -35,7 +35,7 @@ window.setInterval(function() {
     
         window.scrollTo(0, newDistance);
     
-        if(adjustedPercentage > 0.973)  {
+        if(adjustedPercentage > 0.999)  {
             scrollData.shouldAutoScroll = false;
         }
     }

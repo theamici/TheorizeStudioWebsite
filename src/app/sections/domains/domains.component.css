@@ -1,8 +1,10 @@
 @import "../../../assets/css/hover-anim.css";
 
 .cross-site-section {
-    margin-top: 1.3em;
+    margin-top: 3.5vw;
     margin-right: 15%;
+
+    padding-top: 0.2vw;
 
     display: flex;
     flex-wrap: wrap;
@@ -43,11 +45,11 @@
 }
 
 .domain1-btn {
-    background-image: url("../../../assets/GoldenHandsTextV1.png");
+    background-image: url("./custom-img/DomainButton1.png");
 }
 
 .domain2-btn {
-    background-image: url("../../../assets/BaWo_LogoV1.jpg");
+    background-image: url("./custom-img/DomainButton2.png");
 }
 
 @media screen and (max-width: 800px) {

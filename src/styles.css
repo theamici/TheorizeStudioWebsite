@@ -5,10 +5,9 @@
 
 body {
   margin-left: 0.5em;
-  margin-top: 1em;
 
   width: 100%;
-  background-image: url("assets/amicisky.png");
+  background-image: url("assets/custom-img/Background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -19,4 +18,23 @@ body {
   letter-spacing: 200%;
 
   overflow-x: hidden;
+}
+
+a {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+a:link {
+  color:rgb(4, 238, 0);
+}
+
+a:visited {
+  color: rgb(0, 189, 164);
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background-image: url("assets/custom-img/Background-Mobile.png");
+  }
 }

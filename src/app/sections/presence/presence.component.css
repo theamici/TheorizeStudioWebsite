@@ -2,11 +2,12 @@
 @import "../../../assets/css/swoosh.css";
 
 .contact-block {
+    margin-top: 3.5vw;
+    margin-left: 27.5%;
+
     text-align: left;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: lighter;
-
-    margin-left: 27.5%;
 }
 
 .contact-text {
@@ -27,11 +28,11 @@
     }
 
     .contact-text {
-        font-size: 1.6vw;
+        font-size: 4.2vw;
     }
 
     .social-btn {
         padding-right: 0.2em;
-        font-size: 3.4vw;
+        font-size: 10.2vw;
     }
 }

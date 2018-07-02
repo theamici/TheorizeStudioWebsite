@@ -4,7 +4,6 @@
 
 .site {
     width: 100%;
-    margin-top: 3vw;
 
     display: flex;
     flex-wrap: wrap;
@@ -65,10 +64,10 @@
 
 /* TOP TITLE CLASSES */
 .top-title-text {
-    font-size: 4.2vw;
+    font-size: 4.3vw;
     white-space: nowrap;
-    margin-top: 0.1em;
-    margin-left: -0.3em;
+    margin-top: 3vw;
+    margin-left: -0.5em;
 }
 
 .top-subtitle-text {
@@ -92,24 +91,24 @@
 }
 
 .top-article-btn {
-    margin-top: 4.4em;
+    margin-top: 4.6em;
 }
 
 /* ARTICLE SELECTION BUTTON BACKGROUNDS */
 #article1 {
-    background-image: url("../assets/BaWo_LogoV1.jpg");
+    background-image: url("../assets/custom-img/BigButton1.png");
 }
 
 #article2 {
-    background-image: url("../assets/GoldenHandsMaleV1.png");
+    background-image: url("../assets/custom-img/BigButton2.png");
 }
 
 #article3 {
-    background-image: url("../assets/PartnersV1.png");
+    background-image: url("../assets/custom-img/BigButton3.png");
 }
 
 #article4 {
-    background-image: url("../assets/teamV1.png");
+    background-image: url("../assets/custom-img/BigButton4.png");
 }
 
 @media screen and (max-width: 800px) {
@@ -126,12 +125,13 @@
     /* TOP TITLE CLASSES */
     .top-title-text {
         margin-top: 35px;
-        font-size: 7vw;
+        font-size: 8.5vw;
         white-space: normal;
     }
 
     .top-subtitle-text {
-        font-size: 3.6vw;
+        font-size: 5vw;
+        margin-top: -0.6em;
     }
 
     /* ARTICLE SELECTION BUTTON CLASSES */
