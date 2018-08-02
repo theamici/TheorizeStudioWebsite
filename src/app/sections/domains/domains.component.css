@@ -45,11 +45,11 @@
 }
 
 .domain1-btn {
-    background-image: url("./custom-img/DomainButton1.png");
+    background-image: url("../../../assets/domains-img/DomainButton1.png");
 }
 
 .domain2-btn {
-    background-image: url("./custom-img/DomainButton2.png");
+    background-image: url("../../../assets/domains-img/DomainButton2.png");
 }
 
 @media screen and (max-width: 800px) {

@@ -20,6 +20,19 @@
     color: azure; /* #7CFC00; */
 }
 
+.sound-btn {
+    opacity: 0.35;
+    background: none; 
+    border: none;
+}
+
+.sound-btn:hover {
+    opacity: 1;
+}
+.sound-btn:focus {
+    outline: none;
+}
+
 @media screen and (max-width: 800px) {
     .contact-block {
         text-align: center;
