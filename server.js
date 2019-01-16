@@ -7,6 +7,11 @@ const app = express();
 // in the dist directory
 app.use(express.static(__dirname + '/dist/AngularTheorizeStudio'));
 
+// Get thumbnail picture
+app.get('/thumbnail', function(req, res) {
+  res.sendFile(path.join(__dirname + '/dist/AngularTheorizeStudio/assets/custom-img/Background.png'));
+});
+
 // For all GET requests, send back index.html
 // so that PathLocationStrategy can be used
 app.get('*', function(req, res) {

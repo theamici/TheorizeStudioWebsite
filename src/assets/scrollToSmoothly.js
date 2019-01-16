@@ -12,8 +12,11 @@ var scrollData =
     duration: 1500 // default duration
 };
 
-function scrollToSmoothly (targetID, customDuration){
-    if(customDuration){
+function scrollToSmoothly (targetID, customDuration, customUpdateRate){
+    if(customUpdateRate){
+        scrollData.updateRate = customUpdateRate;
+    }
+    else if(customDuration){
         scrollData.duration = customDuration;
     }
 
@@ -23,6 +26,24 @@ function scrollToSmoothly (targetID, customDuration){
     scrollData.startTime = Date.now();
     scrollData.endTime = Date.now() + scrollData.duration;
     scrollData.shouldAutoScroll = true;
+
+    var tAudio = document.getElementById("topAudio");
+    var dAudio = document.getElementById("downAudio");
+
+    tAudio.pause();  
+    tAudio.currentTime = 0;
+    dAudio.pause();
+    dAudio.currentTime = 0;
+
+
+    if(targetID == "top")
+    {
+        tAudio.play();
+    }
+    else if(targetID == "article")
+    {
+        dAudio.play();
+    }
 }
 
 window.setInterval(function() {

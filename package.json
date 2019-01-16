@@ -6,8 +6,7 @@
     "start": "node server.js",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "postinstall": "ng build --prod"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
@@ -49,7 +48,7 @@
     "tslint": "~5.9.1"
   },
   "engines": {
-    "node": "9.9.0",
+    "node": "9.x",
     "npm": "6.1.0"
   }
 }

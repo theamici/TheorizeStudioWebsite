@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
+import { timer } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -7,10 +8,38 @@ import { Router } from "@angular/router";
   styleUrls: ['./app.component.css'],
 })
 
-export class AppComponent { 
+export class AppComponent implements OnInit { 
   isAutoScrolling = false;
 
+  subtitleAudio: HTMLAudioElement;
+  socialAudio: HTMLAudioElement;
+
   constructor(private router: Router) {}
+
+  ngOnInit()
+  {
+    this.subtitleAudio = <HTMLAudioElement>(document.getElementById("subtitleAudio"));
+    this.socialAudio = <HTMLAudioElement>(document.getElementById("socialAudio"));
+
+    let baseAudioDelay = 1400;
+    let subtitleAudioDelay = baseAudioDelay;
+    let socialAudioDelay = 1500 + baseAudioDelay;
+
+    timer(subtitleAudioDelay).subscribe(() => {
+      this.subtitleAudio.play();
+    },
+    (error:any) => {
+      console.log(error);
+    });
+
+    timer(socialAudioDelay).subscribe(() => {
+      this.socialAudio.play();
+    },
+    (error:any) => {
+      console.log(error);
+    });
+  
+  }
 
   navToArticle(num: number) {
     let navStr = '';

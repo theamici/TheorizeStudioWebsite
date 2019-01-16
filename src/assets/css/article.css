@@ -22,8 +22,20 @@
     font-size: 1.7em;
 }
 
+.article-mid-section-title {
+    font-size: 1.7em;
+    padding-top: 0.7em;
+}
+
 .article-section {
     flex-basis: 40%;
+
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.article-double-section {
+    flex-basis: 90%;
 
     margin-left: 5%;
     margin-right: 5%;
@@ -109,6 +121,10 @@
     }
 
     .article-section {
+        flex-basis: 100%;
+    }
+
+    .article-double-section {
         flex-basis: 100%;
     }
 
